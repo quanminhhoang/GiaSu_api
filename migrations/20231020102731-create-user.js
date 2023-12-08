@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER.UNSIGNED,
       },
-      username: {
+      name: {
         type: Sequelize.STRING
       },
       email: {
@@ -17,13 +17,13 @@ module.exports = {
         unique: true
       },
       role: {
-        type: Sequelize.ENUM('admin','tutor', 'parent'),
+        type: Sequelize.ENUM('admin','tutor', 'parents'),
       },
       password: {
         type: Sequelize.STRING,
       },
       gender: {
-        type: Sequelize.ENUM('male', 'female', 'others'),
+        type: Sequelize.ENUM('male', 'female', 'others', ''),
       },
       birth: {
         type: Sequelize.DATEONLY

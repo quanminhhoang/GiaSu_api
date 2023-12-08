@@ -66,7 +66,7 @@ module.exports = {
         err.statusCode = 401;
         err.errors = ["Invalid email"];
         next(err);
-      }
+      }        
 
       const isMatch = await bcrypt.compare(password, user.password);
       if (!isMatch) {
@@ -93,8 +93,11 @@ module.exports = {
         user: {
           id: user.id,
           email: user.email,
-          username: user.username,
+          name: user.name,
+          phoneNumber: user.phone_number,
           role: user.role,
+          gender: user.gender,
+          birth: user.birth
         },
       });
     } catch (err) {
@@ -107,33 +110,44 @@ module.exports = {
 
   register: async (req, res, next) => {
     const {
-      username,
+      name,
       email,
       password,
       role,
       gender,
       birth,
-      phoneNumber,
+      phone,
       address,
     } = req.body;
+
+    console.log({
+      name,
+      email,
+      password,
+      role,
+      gender,
+      birth,
+      phone,
+      address,
+    })
 
     try {
       const hashPw = await bcrypt.hash(password, 12);
       const user = await db.User.create({
-        username,
+        name,
         email,
         password: hashPw,
         role,
         gender,
         birth,
-        phone_number: phoneNumber,
+        phone_number: phone,
         address,
       });
 
       switch (role) {
         case "tutor":
           try {
-            await db.Tutor.create({ user_id: user.id });
+            await db.Tutor.create({ userID: user.id });
           } catch (err) {
             err.errors = "Error occurs when try to create new tutor";
             throw err;
@@ -162,8 +176,11 @@ module.exports = {
         user: {
           id: user.id,
           email: user.email,
-          username: user.username,
+          name: user.name,
+          phoneNumber: user.phone_number,
           role: user.role,
+          gender: user.gender,
+          birth: user.birth
         },
       });
     } catch (err) {

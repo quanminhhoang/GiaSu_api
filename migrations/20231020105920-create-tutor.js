@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER.UNSIGNED,
       },
-      user_id: {
+      userID: {
         type: Sequelize.INTEGER.UNSIGNED,
         unique: true,
         allowNull: false,
@@ -20,26 +20,62 @@ module.exports = {
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
       },
-      fullname: {
+      name: {
         type: Sequelize.STRING,
       },
-      bio: {
+      phone: {
         type: Sequelize.TEXT,
       },
-      education_background: {
+      school: {
         type: Sequelize.TEXT,
       },
-      certificate: {
+      specialized: {
         type: Sequelize.TEXT,
       },
-      teaching_experience: {
-        type: Sequelize.TEXT,
+      expTeach: {
+        type: Sequelize.INTEGER.UNSIGNED,
       },
-      check_status: {
+      job: {
         type: Sequelize.STRING,
       },
-      availability: {
+      subjectRange: {
         type: Sequelize.TEXT,
+      },
+      classRange: {
+        type: Sequelize.TEXT,
+      },
+      skillRange: {
+        type: Sequelize.TEXT,
+      },
+      subjectIds: {
+        type: Sequelize.TEXT,
+      },
+      schedule: {
+        type: Sequelize.TEXT,
+      },
+      description: {
+        type: Sequelize.TEXT,
+      },
+      role: {
+        type: Sequelize.STRING,
+      },
+      address: {
+        type: Sequelize.STRING,
+      },
+      status: {
+        type: Sequelize.STRING,
+      },
+      gender: {
+        type: Sequelize.STRING,
+      },
+      birth: {
+        type: Sequelize.DATE,
+      },
+      address: {
+        type: Sequelize.STRING,
+      },
+      avatar: {
+        type: Sequelize.TEXT
       },
       createdAt: {
         allowNull: false,

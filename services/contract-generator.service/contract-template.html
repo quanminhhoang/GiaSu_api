@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        width: 860px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .flex-column-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .apply-margin-top {
+        margin-top: 10px;
+      }
+
+      .a-address,
+      .chxhcn {
+        width: fit-content;
+      }
+
+      .date {
+        text-align: right;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+
+      .title {
+        margin-bottom: 60px;
+        margin-bottom: 80px;
+      }
+
+      .title > p {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .information-box {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+      }
+
+      .information-box p {
+        flex-basis: 40%;
+        margin: 2px;
+        margin-left: 0;
+      }
+
+      .information-box .address {
+        flex-basis: 100%;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+
+      .giasu-sign,
+      .tt-sign {
+        flex: 1;
+      }
+    </style>
+    <title>Contract Template</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="a-address flex-column-center">
+        <p class="bold uppercase">Công ty TNHH GD vs ĐT Dân Trí</p>
+        <p class="bold">Tầng 3, Số 29 Trần Đăng Ninh, Cầu Giấy</p>
+        <p><em>Hợp đồng số: HD A0116</em></p>
+      </div>
+      <div class="chxhcn flex-column-center">
+        <p class="bold uppercase">Cộng hòa xã hội chủ nghĩa việt nam</p>
+        <p class="bold">Độc lập - Tự do - Hạnh phúc</p>
+      </div>
+    </div>
+    <div class="content">
+      <p class="date"><em>Hà Nội, ngày 5 tháng 7 năm 2022</em></p>
+      <div class="title flex-column-center">
+        <h1 class="uppercase">Hợp đồng gia sư</h1>
+        <p>
+          <em>Về việc:</em> <span class="uppercase">Giao nhận lớp dạy kèm</span>
+        </p>
+      </div>
+
+      <div class="main-content">
+        <p class="bold uppercase">BÊN A: TRUNG TÂM GIA SƯ ONLINE HÀ NỘI</p>
+        <div class="information-box">
+          <p class="address">
+            Địa chỉ: Tầng 3, Số 29 Trần Đăng Ninh, Dịch Vọng, Cầu Giấy, Hà Nội
+          </p>
+          <p>Số điện thoại: 097 485 9119</p>
+          <p>Web: giasudantri.vn</p>
+          <p>Đại diện: Vũ Huyền Trang</p>
+          <p>Số CMTND: 142 578 054</p>
+          <p>Số tài khoản: 0691000365122</p>
+          <p>Ngân hàng: Vietcombank, chi nhánh Hà Tây</p>
+        </div>
+        <p class="bold uppercase">BÊN B: Gia sư</p>
+        <div class="information-box">
+          <p>Họ và tên: <span id="tutor-name">Lê Hoàng Nam Quân</span></p>
+          <p>Điện thoại: <span id="tutor-phone">0396865583</span> </p>
+          <p>Sinh ngày: <span id="tutor-birth">22/01/2002</span></p>
+          <p>ĐKHK thường trú: <span id="tutor-address">Thái Nguyên</span></p>
+          <p>
+            Công việc hiện tại: <span id="tutor-job">Sinh viên Đại Học Quốc Gia – Đại Học Công Nghệ</span>
+          </p>
+          <p>Mã SV/Số CMT: 019202004048</p>
+        </div>
+      </div>
+
+      <p class="apply-margin-top">
+        <em
+          >Sau khi trao đổi và bàn bạc hai bên đã đi đến thống nhất lập hợp đồng
+          dịch vụ với nội dung và điều khoản sau:</em
+        >
+      </p>
+
+      <p class="bold apply-margin-top">Điều 1: Đối tượng hợp đồng</p>
+      <p>Bên B là người giảng dạy tại nhà Phụ huynh do Bên A giới thiệu:</p>
+      <div class="information-box">
+        <p>Họ tên phụ huynh: <span id="parent-name">Chị Hà</span></p>
+        <p>Số điện thoại: <span id="parent-phone">0934488211</span></p>
+        <p class="address">
+          Địa chỉ: <span id="parent-address">Chung cư Thăng Long Number One Trung Hòa, Cầu Giấy</span>
+        </p>
+        <p>Môn dạy: <span id="class-subject">Toán 10 lên 11</span></p>
+        <p>Số buổi: <span id="class-schedule">2b/tuần</span></p>
+        <p>Mức lương: <span id="class-price">150k/b</span></p>
+        <p>Thời gian dạy: <span id="class-time-per-day">2h/buổi</span></p>
+      </div>
+    </div>
+
+    <p class="bold apply-margin-top">Điều 2: Mức phí nhận lớp</p>
+    <p>
+      - Bên B phải thanh toán cho Bên A 40% số lương một tháng đủ khi nhận lớp
+      dạy với số tiền là: 480.000đ
+    </p>
+    <p>- Tổng số tiền bên B đã nộp là: 0đ. Hẹn đến ngày 30/07/2022 nộp hết!</p>
+
+    <p class="bold apply-margin-top">Điều 3: Nghĩa vụ của bên A</p>
+    <p>
+      - Cung cấp cho bên B thông tin chính xác: Họ tên, số điện thoại, địa chỉ
+      Phụ huynh và hẹn lịch dạy cho Gia sư trong thời gian tối đa 10 ngày kể từ
+      ngày Ký hợp đồng.
+    </p>
+    <p>
+      - Đảm bảo quyền lợi của bên B nếu phát sinh các vấn đề liên quan đến việc
+      hủy lớp (chi tiết tại điều 5) trong thời gian có hiệu lực của hợp đồng.
+    </p>
+
+    <p class="bold apply-margin-top">Điều 4: Nghĩa vụ của bên B</p>
+    <p>- Thanh toán tiền phí cho bên A đầy đủ và đúng hạn.</p>
+    <p>
+      - Khi đến gặp Phụ huynh, Bên B phải xuất trình: Thẻ sinh viên, Thẻ giáo
+      viên, Giấy xác nhận là Giáo viên đang đứng lớp, CMTND (nếu phụ huynh yêu
+      cầu). Kèm theo Giấy giới thiệu của Trung tâm.
+    </p>
+    <p>
+      - Đảm bảo giờ học cho Phụ huynh đúng lịch. (Nếu vì một lý do nào đó mà
+      phải nghỉ dạy phải điện thoại báo trước cho Phụ huynh ít nhất là 3 giờ).
+    </p>
+    <p>- Có giáo trình, giáo án theo đúng yêu cầu.</p>
+    <p>- Giữ bí mật về những thông tin của gia cảnh Phụ huynh</p>
+    <p>
+      - Không được chuyển giao lớp học cho người khác nếu chưa được bên A chấp
+      nhận.
+    </p>
+    <p>
+      - Trường hợp học phí và số lượng buổi học (tăng/giảm) được Gia sư và Phụ
+      huynh trao đổi lại với nhau sau khi nhận lớp. Bên B phải thông báo lại cho
+      Bên A (muộn nhất sau 48h). Để Bên A tiến hành xác minh và tính lại mức phí
+      nhận lớp. Sau 48h có thông tin mà Bên B không thông báo, Bên A sẽ áp dụng
+      mức tính phí nhận lớp như ban đầu.
+    </p>
+
+    <p class="bold apply-margin-top">
+      Điều 5: Các vấn đề liên quan đến hủy lớp
+    </p>
+    <p>
+      1. Nếu Phụ huynh không thu xếp được lịch học do tất cả những nguyên nhân
+      xuất phát từ phía gia đình. Sau khi xác minh thông tin chính xác, Bên A sẽ
+      giới thiệu cho Bên B một lớp phù hợp khác hoặc hoàn lại 100% phí hợp đồng.
+    </p>
+    <p>
+      2. Nếu Bên B dạy không đạt (về cả kiến thức và kỹ năng), Học sinh không
+      tiếp thu được hoặc Bên B chuẩn bị bài không tốt trong 1 hoặc 2 buổi dạy
+      thử thì Bên A sẽ hoàn phí 100%.
+    </p>
+    <p>
+      3. Nếu bên B dạy chưa đủ 100% tổng số buổi/tháng. Phụ huynh yêu cầu ngừng
+      dạy và vẫn thanh toán tiền lương. Bên A sẽ xác minh và dựa vào mức học phí
+      Phụ huynh thanh toán với Gia sư, để tiến hành tính lại Phí nhận lớp của
+      Gia sư.
+    </p>
+    <p>(Mức tính Phí: 40% lương một tháng)</p>
+    <p>
+      4. Nếu bên B đã dạy được số buổi lớn hơn tổng số buổi/tháng (lớn hơn từ 1
+      - 2 buổi) mà bên Phụ huynh yêu cầu ngừng dạy và vẫn thanh toán đầy đủ tiền
+      lương. Bên A sẽ xác minh và giảm 5% mức phí nhận lớp tại lần thứ 2:
+    </p>
+    <p>- Tương đương với 35% lương một tháng</p>
+    <p>
+      - Trường hợp này sẽ không tính lại Phí ở điều 2 và áp dụng cho cả Sinh
+      viên và Giáo viên.
+    </p>
+    <p>5. Những trường hợp không hoàn lại phí:</p>
+    <p>
+      - Gia sư không đến dạy buổi đầu tiên và không báo cho Phụ huynh cũng như
+      Trung tâm, khiến Gia đình hủy lớp dạy và hủy hợp tác với Bên A.
+    </p>
+    <p>- Những lý do cá nhân Bên B tự ý bỏ lớp.</p>
+
+    <p class="bold apply-margin-top">Điều 6: Hoàn trả phí nhận lớp</p>
+    <p>
+      Dựa theo các khoản mục của điều 5, Bên A sẽ giải quyết Hoàn phí vào tất cả
+      các buổi chiều trong tuần. Trường hợp ngày giải quyết Hợp đồng trùng với
+      ngày nghỉ, ngày lễ Bên A sẽ giải quyết vào ngày làm việc kế tiếp. Khi đến
+      giải quyết hợp đồng Bên B cần mang theo Hợp đồng, Phiếu thu liên 2 để làm
+      căn cứ trong việc hoàn lại phí nhận lớp.
+    </p>
+    <p class="bold apply-margin-top">
+      Điều 7: Thời gian có hiệu lực của hợp đồng
+    </p>
+    <p>
+      Hợp đồng có hiệu lực kể từ ngày ký và có hiệu lực trong 60 ngày, được lập
+      thành hai bản, mỗi bên giữ một bản để theo dõi thực hiện.
+    </p>
+    <div class="footer">
+      <div class="giasu-sign flex-column-center">
+        <p class="bold uppercase">GIA SƯ</p>
+        <p><em>(Ký, ghi rõ họ tên)</em></p>
+      </div>
+      <div class="tt-sign flex-column-center">
+        <p class="bold uppercase">TM TRUNG TÂM GIA SƯ ONLINE</p>
+        <p><em>(Ký, ghi rõ họ tên)</em></p>
+      </div>
+    </div>
+  </body>
+</html>
