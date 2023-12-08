@@ -7,10 +7,6 @@ const db = require('../models/index');
 const { QueryTypes } = require('sequelize');
 
 //Casso config
-let webhookUtil = require('../utils/webhook.util');
-let getTokenUtil = require('../utils/get_token.util');
-let syncUtil = require('../utils/sync.util');
-let userUtil = require('../utils/get_user_info.util');
 const transaction_prefix = 'CASSO';
 const case_insensitive = false;
 const expiration_date = 3;
@@ -290,6 +286,4 @@ module.exports = {
 	createPaymentURL,
 	vnpayIpn,
 	vnpayReturn,
-	bankTransfer,
-	userPaid,
 };
