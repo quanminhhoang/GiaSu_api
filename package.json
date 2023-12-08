@@ -8,7 +8,7 @@
 		"migrate:up": "npx sequelize-cli db:migrate",
 		"migrate:undo": "npx sequelize-cli db:migrate:undo",
 		"migrate:undo:all": "npx sequelize-cli db:migrate:undo:all",
-		"test": "nodemon ./src/app.js"
+		"test": ""
 	},
 	"author": "team 5",
 	"license": "ISC",
