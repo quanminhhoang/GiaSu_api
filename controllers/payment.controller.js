@@ -1,4 +1,3 @@
-const VietQR = require('vietqr');
 //Vnpay
 const querystring = require('qs');
 const crypto = require('crypto');

@@ -12,7 +12,6 @@
   "author": "team 5",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.6.2",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.41.0",
     "cors": "^2.8.5",
@@ -28,8 +27,7 @@
     "query-string": "6.0.0",
     "sequelize": "^6.35.1",
     "sequelize-cli": "^6.6.1",
-    "sha256": "^0.2.0",
-    "vietqr": "^1.1.9"
+    "sha256": "^0.2.0"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
