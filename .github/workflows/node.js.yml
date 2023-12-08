@@ -38,11 +38,9 @@ jobs:
     needs: [build]
     runs-on: windows-latest
     steps:
-      - name: Render Deployment
-        uses: bounceapp/render-action@0.6.0
+      - name: Deploy
+        uses: johnbeynon/render-deploy-action@v0.0.8
         with:
-          render-token: ${{ secrets.RENDER_TOKEN }}
-          service-id: srv-clpkokp46foc73abcn20
-          retries: 20
-          wait: 16000
-          sleep: 30000
+          service-id: ${{ secrets.SERVICE_ID }}
+          api-key: ${{ secrets.RENDER_API_KEY }}
+          wait-for-success: true
